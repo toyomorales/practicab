@@ -16,6 +16,7 @@ public class Practica extends javax.swing.JFrame {
 
         btnActivar = new javax.swing.JButton();
         lblMensaje1 = new javax.swing.JLabel();
+        lblMensaje2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -29,17 +30,24 @@ public class Practica extends javax.swing.JFrame {
         lblMensaje1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lblMensaje1.setText("jLabel1");
 
+        lblMensaje2.setText("jLabel1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(184, 184, 184)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnActivar, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(lblMensaje1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(184, 184, 184)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnActivar, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(37, 37, 37)
+                                .addComponent(lblMensaje1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(231, 231, 231)
+                        .addComponent(lblMensaje2)))
                 .addContainerGap(212, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -49,7 +57,9 @@ public class Practica extends javax.swing.JFrame {
                 .addComponent(btnActivar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(78, 78, 78)
                 .addComponent(lblMensaje1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addComponent(lblMensaje2)
+                .addContainerGap(88, Short.MAX_VALUE))
         );
 
         pack();
@@ -57,6 +67,7 @@ public class Practica extends javax.swing.JFrame {
 
     private void btnActivarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActivarActionPerformed
         lblMensaje1.setText("Hola..");
+        lblMensaje2.setText("Como te va...");
     }//GEN-LAST:event_btnActivarActionPerformed
 
   
@@ -95,5 +106,6 @@ public class Practica extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnActivar;
     private javax.swing.JLabel lblMensaje1;
+    private javax.swing.JLabel lblMensaje2;
     // End of variables declaration//GEN-END:variables
 }
